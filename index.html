@@ -2,11 +2,10 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <!-- 안전 영역 포함 전체화면 설정 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>정확한 클론 코딩 예시</title>
   <style>
-    /* 전체 페이지 기본 설정 */
     html, body {
       margin: 0;
       padding: 0;
@@ -16,7 +15,6 @@
       overflow: hidden;
       touch-action: none;
 
-      /* iPhone notch, 홈 인디케이터 고려 */
       padding-top: env(safe-area-inset-top);
       padding-bottom: env(safe-area-inset-bottom);
       padding-left: env(safe-area-inset-left);
@@ -25,32 +23,36 @@
 
     .container {
       position: relative;
-      width: 100%;
-      height: 100%;
-      background: url('46b448a4-b3b1-47c6-a42c-9d9f49b483f5.png') no-repeat center/cover;
+      width: 100vw;
+      height: 100vh;
+      background: url('46b448a4-b3b1-47c6-a42c-9d9f49b483f5.png') no-repeat center center;
+      background-size: cover;
     }
 
     .qr-code {
       position: absolute;
-      top: 285px;
-      left: 120px;
-      width: 190px;
-      height: 190px;
+      top: 30%;
+      left: 50%;
+      width: 44%;
+      aspect-ratio: 1 / 1;
+      transform: translate(-50%, 0);
     }
 
     .qr-code img {
       width: 100%;
       height: 100%;
+      object-fit: contain;
     }
 
     .wallet-address {
       position: absolute;
-      top: 585px;
-      left: 65px;
-      font-size: 17px;
+      top: 70%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1rem;
       color: #C5C5D2;
       font-weight: 400;
-      line-height: 0.7;
+      text-align: center;
       white-space: pre-line;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     }
