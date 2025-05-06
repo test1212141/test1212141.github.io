@@ -31,11 +31,11 @@
 
     .qr-code {
       position: absolute;
-      top: 30%;
+      top: 82px;  /* 픽셀 단위 위치로 수정 */
       left: 50%;
-      width: 44%;
-      aspect-ratio: 1 / 1;
-      transform: translate(-50%, 0);
+      width: 450px; /* 크기도 픽셀 단위로 수정 */
+      height: 450px; /* 정사각형 크기 */
+      transform: translateX(-50%);
     }
 
     .qr-code img {
@@ -46,7 +46,7 @@
 
     .wallet-address {
       position: absolute;
-      top: 70%;
+      top: 800px;  /* 픽셀 단위 위치로 수정 */
       left: 50%;
       transform: translateX(-50%);
       font-size: 1rem;
