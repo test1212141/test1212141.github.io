@@ -2,13 +2,20 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- iPhone 14 기준 해상도 + 확대 방지 -->
+  <meta name="viewport" content="width=430, height=932, user-scalable=no">
   <title>정확한 클론 코딩 예시</title>
   <style>
-    body {
+    html, body {
+      width: 430px;
+      height: 932px;
       margin: 0;
+      padding: 0;
+      overflow: hidden;
       background: #000;
+      touch-action: none; /* 터치 확대 방지 */
     }
+
     .container {
       position: relative;
       width: 430px;
@@ -16,6 +23,7 @@
       margin: 0 auto;
       background: url('46b448a4-b3b1-47c6-a42c-9d9f49b483f5.png') no-repeat center/cover;
     }
+
     .qr-code {
       position: absolute;
       top: 285px;
@@ -23,10 +31,12 @@
       width: 190px;
       height: 190px;
     }
+
     .qr-code img {
       width: 100%;
       height: 100%;
     }
+
     .wallet-address {
       position: absolute;
       top: 585px;
@@ -38,7 +48,7 @@
       color: #C5C5D2;
       font-weight: 400;
       line-height: 0.7;
-      white-space: pre-line; /* 줄바꿈을 적용하기 위한 속성 */
+      white-space: pre-line;
     }
   </style>
 </head>
