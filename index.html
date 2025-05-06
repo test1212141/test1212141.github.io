@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정확한 클론 코딩 예시</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+    }
+    .container {
+      position: relative;
+      width: 430px;
+      height: 932px;
+      margin: 0 auto;
+      background: url('46b448a4-b3b1-47c6-a42c-9d9f49b483f5.png') no-repeat center/cover;
+    }
+    .qr-code {
+      position: absolute;
+      top: 285px;
+      left: 120px;
+      width: 190px;
+      height: 190px;
+    }
+    .qr-code img {
+      width: 100%;
+      height: 100%;
+    }
+    .wallet-address {
+      position: absolute;
+      top: 585px;
+      width: 100%;
+      left: 65px;
+      text-align: left;
+      font-size: 17px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #C5C5D2;
+      font-weight: 400;
+      line-height: 0.7;
+      white-space: pre-line; /* 줄바꿈을 적용하기 위한 속성 */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="qr-code">
+      <img id="qrImage" src="qr.png" alt="QR Code">
+    </div>
+    <div class="wallet-address" id="walletAddress">
+      TJX4QFjqt49c9nHbZohQ2qAfjhiYb7<br> 
+      Eloz (원하는 테더 주소 입력 가능)
+    </div>
+  </div>
+</body>
+</html>
